@@ -1,0 +1,19 @@
+<app-header titulo="alertass"></app-header>
+
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Página Alertas</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-button (click)="presentAlert2()">Chamar Input</ion-button>
+  <ion-alert
+  trigger="present-alert"
+  header="Please enter your info"
+  [buttons]="alertButtons"
+  [inputs]="alertInputs"
+  ></ion-alert>
+  Alerta
+  <ion-button (click)="presentAlert()">Chamar Alerta</ion-button>
+</ion-content>
