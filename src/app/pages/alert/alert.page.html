@@ -1,4 +1,4 @@
-<app-header titulo="alertass"></app-header>
+<app-header [titulo]="titulo || 'Página de Alerta'"></app-header>
 
 
 <ion-content [fullscreen]="true">
@@ -16,4 +16,6 @@
   ></ion-alert>
   Alerta
   <ion-button (click)="presentAlert()">Chamar Alerta</ion-button>
+  <span>Notificações</span>
+  <ion-badge color="primary">12</ion-badge>
 </ion-content>

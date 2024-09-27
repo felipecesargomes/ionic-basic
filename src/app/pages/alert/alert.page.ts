@@ -1,6 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { AlertController } from '@ionic/angular';
 
+interface AlertData {
+  name: string;
+  nickname: string;
+  age: number;
+  about: string;
+}
+
 @Component({
   selector: 'app-alert',
   templateUrl: './alert.page.html',
@@ -8,12 +15,20 @@ import { AlertController } from '@ionic/angular';
 })
 export class AlertPage implements OnInit {
 
+  titulo?: string;
+
   constructor(private alertController: AlertController) { }
 
   ngOnInit() {
   }
 
-  public alertButtons = ['OK']; // Defina a propriedade alertButtons
+  public alertButtons = [{
+    text: 'OK',
+    handler: (data: any) => {
+      this.titulo = data.name;
+      console.log('Nome inserido:', data.name);
+    }
+  }]; // Defina a propriedade alertButtons
 
   public alertInputs = [
     {
@@ -63,6 +78,7 @@ export class AlertPage implements OnInit {
     });
 
     await alert.present();
+
   }
 
 }
