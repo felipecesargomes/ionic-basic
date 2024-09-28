@@ -19,6 +19,30 @@ export class InicioPage implements OnInit {
       nome: 'Modal',
       link: '/action-sheet',
       subtitulo: 'Janela Modal'
+    },
+    {
+      icone: 'book-outline',
+      nome: 'Cards',
+      link: '/cards',
+      subtitulo: 'Cards'
+    },
+    {
+      icone: 'calendar-outline',
+      nome: 'Datas',
+      link: '/datas',
+      subtitulo: 'Datas'
+    },
+    {
+      icone: 'calendar-outline',
+      nome: 'Grids',
+      link: '/grids',
+      subtitulo: 'Grids'
+    },
+    {
+      icone: 'calendar-outline',
+      nome: 'Inputs',
+      link: '/inputs',
+      subtitulo: 'Inputs'
     }
   ];
 

@@ -27,6 +27,22 @@ const routes: Routes = [
     path: 'cards',
     loadChildren: () => import('./pages/cards/cards.module').then( m => m.CardsPageModule)
   },
+  {
+    path: 'datas',
+    loadChildren: () => import('./pages/datas/datas.module').then( m => m.DatasPageModule)
+  },
+  {
+    path: 'grids',
+    loadChildren: () => import('./pages/grids/grids.module').then( m => m.GridsPageModule)
+  },
+  {
+    path: 'inputs',
+    loadChildren: () => import('./pages/inputs/inputs.module').then( m => m.InputsPageModule)
+  },
+  {
+    path: 'menu',
+    loadChildren: () => import('./pages/menu/menu.module').then( m => m.MenuPageModule)
+  },
 ];
 
 @NgModule({

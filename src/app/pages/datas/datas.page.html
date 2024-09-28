@@ -1,0 +1,7 @@
+<app-header titulo="Data"></app-header>
+
+<ion-content>
+  <p>{{ dt | date:'dd/MM/yyyy' }}</p> <!-- Exibe a data de hoje em texto -->
+  <ion-datetime display-format="YYYY MMMM DD" placeholder="Data" [(ngModel)]="dt" min="2019-01-01" max="2020-01-01" (ionChange)="trocarData($event)"></ion-datetime>
+
+</ion-content>
