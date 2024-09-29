@@ -1,0 +1,10 @@
+.fixed-menu {
+    z-index: 9999999999;
+}
+
+#main-content.ion-page {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+  }
+  
